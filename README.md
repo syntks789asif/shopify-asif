@@ -20,7 +20,7 @@ The E-commerce Platform is a robust solution for businesses looking to establish
 ## Admin
 
 #### Admin Architecture
-![Buyer Architecture](url/to/image.jpg)
+![Buyer Architecture](documentation/buyer/ecommercBuyer.svg)
 
 ## Seller
 
@@ -31,7 +31,7 @@ The E-commerce Platform is a robust solution for businesses looking to establish
 ## Buyer (Customer)
 
 #### Buyer Architecture
-![Buyer Architecture](url/to/image.jpg)
+![Buyer Architecture](documentation/buyer/ecommercBuyer.svg)
 
 ## Features
 - User-friendly product catalog
