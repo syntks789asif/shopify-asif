@@ -20,7 +20,7 @@ The E-commerce Platform is a robust solution for businesses looking to establish
 ## Admin
 
 #### Admin Architecture
-![Buyer Architecture](documentation/buyer/ecommercBuyer.svg)
+![Buyer Architecture](documentation/admin/.svg)
 
 ## Seller
 
