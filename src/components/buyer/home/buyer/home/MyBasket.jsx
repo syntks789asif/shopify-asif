@@ -9,6 +9,7 @@ const MyBasket = () => {
             <div>?</div><div>?</div></div>
         </div>
         <div className='container-fluid flex justify-evenly items-center gap-[1vw] '> 
+            
             <ProductCards/>
             <ProductCards/>
             <ProductCards/>
