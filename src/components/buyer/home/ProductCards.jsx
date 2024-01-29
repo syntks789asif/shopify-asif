@@ -3,7 +3,7 @@ import { FaRupeeSign } from "react-icons/fa";
 
 const ProductCards = () => {
   return (
-    <div className="container-fluid w-[23%] h-[80vh] bg-white rounded-lg p-2 flex flex-col justify-between items-center gap-3 shadow-lg">
+    <div className="container-fluid w-[80%] h-[60vh] sm:w-[45%] sm:h-[65vh] md:w-[30%] md:h-[70vh] lg:w-[23%] lg:h-[75vh] bg-white rounded-lg p-2 flex flex-col justify-between flex-wrap items-center gap-3 shadow-lg">
       <div className=" rounded-md w-[100%] h-[30vh] border p-2  ">
         <img
           src="https://www.bigbasket.com/media/uploads/p/m/10000067_23-fresho-capsicum-green.jpg?tr=w-1920,q=80"
