@@ -1,15 +1,21 @@
 'use client';
-
+import { useState } from "react";
 import { IoSearch } from "react-icons/io5";
 import { FaLocationArrow } from "react-icons/fa";
 import { BsFillBasketFill } from "react-icons/bs";
 import { MdAccountCircle } from "react-icons/md";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-function HandleNav(){
-  console.log('clicked')
-}
+
 const Header = () => {
+
+  const [isNavOpen ,setIsNavOpen] = useState(false);
+
+  const HandleNav = () => {
+    console.log('open or close')
+    setIsNavOpen(!isNavOpen); 
+    
+  };
   return (
     <header className="container-fluid flex  justify-between items-center px-[5%] w-full h-[12vh]   border-t-green-500 border-t-4 ">
       <div className="logo w-[20%] sm:w-[16%] lg:w-[10%]  ">
@@ -31,12 +37,12 @@ const Header = () => {
       <div className=" burger md:hidden  p-1 cursor-pointer" onClick={HandleNav}>
           <GiHamburgerMenu className="font-extrabold text-xl"/>
       </div>
-      <div className="buttons hidden justify-between w-[10%]  md:flex  md:w-[35%] lg:w-[35%]">
+      <div className={"buttons hidden justify-between w-[10%]  md:flex  md:w-[35%] lg:w-[35%]"}>
         <div className="relative ">
           <button className="btn bg-[#E8E8E8] md:p-1 lg:p-2 shadow lg:pl-7 rounded-md  p-2  lg:inline-block">
+          <FaLocationArrow className="absolute top-3 left-1 " />
             Select Location
           </button>
-          <FaLocationArrow className="absolute top-3 left-1 " />
         </div>
 
         <div className="relative ">
