@@ -6,12 +6,11 @@ import { FaPinterestP } from "react-icons/fa";
 import { FaGooglePlay } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 
-
 import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="w-full min-h-[100vh] bg-black   p-[5%]">
-      <div className=" w-full flex justify-between items-start ">
+      <div className=" w-full flex flex-col gap-10 sm:flex-row justify-between items-start ">
         <ul className="text-[#DDDDDD] leading-10 p-2">
           <li>
             <h3 className="font-bold text-white text-xl">Big Basket</h3>
@@ -72,44 +71,65 @@ const Footer = () => {
         </ul>
         <div className="flex flex-col gap-10 items-start">
           <div className=" text-white flex flex-col justify-center items-center">
-            <div className="flex items-center text-xl md:text-3xl "><SiBigbasket/> <h2 className="font-bold">big</h2>basket</div>
-            <div className="md:text-sm ">A TATA Enterprise</div>
+            <div className="flex items-center gap-1 sm:text-base md:text-xl  lg:text-3xl 2xl:text-4xl ">
+              <SiBigbasket />{" "}
+              <h2 className="font-bold sm:hidden md:inline">big</h2>basket
+            </div>
+            <div className=" text-sm md:text-sm ">A TATA Enterprise</div>
           </div>
-          <div className="flex gap-1 md:gap-3">
-            <div className="flex items-center gap-1 md:gap-2 w-fit rounded-md border-2 p-1 ">
-              <div >
-                <FaGooglePlay className="text-white text-xl md:text-4xl"/>
+          <div className="flex gap-1 sm:flex-col md:flex-row items-center md:gap-3">
+            <div className="flex items-center justify-center gap-1 md:gap-2 w-fit rounded-md border-2 p-1 ">
+              <div>
+                <FaGooglePlay className="text-white text-xl md:text-4xl" />
               </div>
               <div>
-              <span className="text-[#DDDDDD] text-xs hidden sm:inline">GET IT ON </span>
-              <h5 className="text-white text-sm md:text-lg">Google Play</h5>
+                <span className="text-[#DDDDDD] text-xs hidden md:inline">
+                  GET IT ON{" "}
+                </span>
+                <h5 className="text-white text-sm md:text-lg inline sm:hidden md:flex">
+                  Google Play
+                </h5>
               </div>
             </div>
             <div className="flex items-center gap-2 w-fit rounded-md  border-2 p-1 ">
-            <div>
-                <FaApple className="text-white text-xl md:text-4xl"/>
+              <div>
+                <FaApple className="text-white text-xl md:text-4xl" />
               </div>
-              <div >
-              <span className="text-[#DDDDDD] text-xs hidden sm:inline">GET IT ON </span>
-              <h5 className="text-white   text-sm md:text-lg">App Store</h5>
+              <div>
+                <span className="text-[#DDDDDD] md:inline text-xs hidden ">
+                  GET IT ON{" "}
+                </span>
+                <h5 className="text-white   text-sm md:text-lg inline sm:hidden md:flex">
+                  App Store
+                </h5>
               </div>
             </div>
           </div>
-          <div className="flex gap-6 md:gap-4 justify-center items-center">
-            <div className="text-white text-lg md:text-2xl md:p-2 p-1 hover:text-black hover:bg-white cursor-pointer  w-fit"><FaFacebookF/></div>
-            <div className="text-white text-lg md:text-2xl md:p-2 p-1 hover:text-black hover:bg-white cursor-pointer w-fit"><BsInstagram/></div>
-            <div className="text-white text-lg md:text-2xl md:p-2 p-1 hover:text-black hover:bg-white cursor-pointer w-fit"><BsTwitter/></div>
-            <div className="text-white text-lg md:text-2xl md:p-2 p-1 hover:text-black hover:bg-white cursor-pointer w-fit"><FaPinterestP/></div>
+          <div className="flex gap-6 sm:flex-col md:flex-row  md:gap-4 justify-center items-center">
+            <div className="text-white text-lg md:text-2xl md:p-2 p-1 hover:text-black hover:bg-white cursor-pointer  w-fit">
+              <FaFacebookF />
+            </div>
+            <div className="text-white text-lg md:text-2xl md:p-2 p-1 hover:text-black hover:bg-white cursor-pointer w-fit">
+              <BsInstagram />
+            </div>
+            <div className="text-white text-lg md:text-2xl md:p-2 p-1 hover:text-black hover:bg-white cursor-pointer w-fit">
+              <BsTwitter />
+            </div>
+            <div className="text-white text-lg md:text-2xl md:p-2 p-1 hover:text-black hover:bg-white cursor-pointer w-fit">
+              <FaPinterestP />
+            </div>
           </div>
           <div className="flex flex-col  gap-1 md:gap-3">
-            <h3 className="text-white font-bold text-base md:text-lg">Vendor Connect</h3>
+            <h3 className="text-white font-bold text-base md:text-lg">
+              Vendor Connect
+            </h3>
 
             <button
-              className="btn font-semibold flex gap-2 items-center border-2 border-white md:p-2 p-1 rounded-md text-white hover:border-black hover:text-black
-           hover:bg-white w-auto"
+              className="btn font-semibold flex gap-1 md:gap-2 items-center border-2 w-fit border-white md:p-2 p-1 rounded-md text-white hover:border-black hover:text-black
+           hover:bg-white  "
             >
-              <SiBigbasket className="text-white hover:text-black" />
-              Become Seller
+              <SiBigbasket className="text-white hover:text-black " />
+              <span className=" inline sm:hidden md:inline">Become Seller</span>
             </button>
           </div>
         </div>
