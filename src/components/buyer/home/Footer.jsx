@@ -9,9 +9,9 @@ import { FaApple } from "react-icons/fa";
 import Link from "next/link";
 const Footer = () => {
   return (
-    <footer className="w-full min-h-[100vh] bg-black   p-[5%]">
-      <div className=" w-full flex flex-col gap-10 sm:flex-row justify-between items-start ">
-        <ul className="text-[#DDDDDD] leading-10 p-2">
+    <footer className="w-screen min-h-[100vh] bg-black   p-[5%]">
+      <div className=" w-full flex flex-col gap-10 md:flex-row justify-between items-start ">
+        <ul className="text-[#DDDDDD] leading-10 p-2 flex flex-col gap-0">
           <li>
             <h3 className="font-bold text-white text-xl">Big Basket</h3>
           </li>
@@ -77,35 +77,31 @@ const Footer = () => {
             </div>
             <div className=" text-sm md:text-sm ">A TATA Enterprise</div>
           </div>
-          <div className="flex gap-1 sm:flex-col md:flex-row items-center md:gap-3">
-            <div className="flex items-center justify-center gap-1 md:gap-2 w-fit rounded-md border-2 p-1 ">
+          <div className="flex flex-col sm:flex-row gap-2 md:flex-row items-center md:gap-3">
+            <div className="flex items-center justify-center gap-1 md:gap-2 w-fit rounded-md border-2 p-1 cursor-pointer">
               <div>
                 <FaGooglePlay className="text-white text-xl md:text-4xl" />
               </div>
               <div>
-                <span className="text-[#DDDDDD] text-xs hidden md:inline">
-                  GET IT ON{" "}
-                </span>
-                <h5 className="text-white text-sm md:text-lg inline sm:hidden md:flex">
+                <span className="text-[#DDDDDD] text-xs  ">GET IT ON </span>
+                <h5 className="text-white text-sm md:text-lg  md:flex">
                   Google Play
                 </h5>
               </div>
             </div>
-            <div className="flex items-center gap-2 w-fit rounded-md  border-2 p-1 ">
+            <div className="flex items-center gap-2 w-fit rounded-md  border-2 py-1 px-2 cursor-pointer">
               <div>
                 <FaApple className="text-white text-xl md:text-4xl" />
               </div>
               <div>
-                <span className="text-[#DDDDDD] md:inline text-xs hidden ">
-                  GET IT ON{" "}
-                </span>
-                <h5 className="text-white   text-sm md:text-lg inline sm:hidden md:flex">
+                <span className="text-[#DDDDDD]  text-xs ">GET IT ON </span>
+                <h5 className="text-white   text-sm md:text-lg  md:flex">
                   App Store
                 </h5>
               </div>
             </div>
           </div>
-          <div className="flex gap-6 sm:flex-col md:flex-row  md:gap-4 justify-center items-center">
+          <div className="flex gap-3 md:flex-row  md:gap-4 justify-center items-center">
             <div className="text-white text-lg md:text-2xl md:p-2 p-1 hover:text-black hover:bg-white cursor-pointer  w-fit">
               <FaFacebookF />
             </div>
@@ -125,11 +121,11 @@ const Footer = () => {
             </h3>
 
             <button
-              className="btn font-semibold flex gap-1 md:gap-2 items-center border-2 w-fit border-white md:p-2 p-1 rounded-md text-white hover:border-black hover:text-black
+              className="btn font-semibold flex gap-1 group md:gap-2 items-center border-2 w-fit border-white md:p-2 p-1 rounded-md text-white hover:border-black hover:text-black
            hover:bg-white  "
             >
-              <SiBigbasket className="text-white hover:text-black " />
-              <span className=" inline sm:hidden md:inline">Become Seller</span>
+              <SiBigbasket className="text-white  group-hover:text-black " />
+              <span className=" inline md:inline">Become Seller</span>
             </button>
           </div>
         </div>

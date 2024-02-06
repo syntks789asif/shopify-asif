@@ -6,8 +6,8 @@ import Link from "next/link";
 
 const page = () => {
   return (
-    <main className=" h-[100%] flex justify-center items-center bg-gradient-to-r from-indigo-900 via-indigo-700 to-cyan-400 md:w-[98.95vw]  md:h-screen md:-mb-10">
-      <div className=" sm:p-14 xs:w-[100%]  md:h-[70vh]  xs:h-[100%] sm:w-[414px] rounded-lg p-[30px] sm:shadow-lg bg-white  md:mt-6 sm:h-[90%] xs:rounded-none md:m-5 md:border-none md:rounded-xl">
+    <main className=" h-[100%] flex justify-center items-center bg-gradient-to-r from-indigo-900 via-indigo-700 to-cyan-400 md:w-[100vw]  md:h-screen md:-mb-10">
+      <div className=" sm:p-14 xs:w-[100vw]  md:h-[70vh] md:w-[414px]  xs:h-[100%] sm:w-[100vw] rounded-lg p-[30px] sm:shadow-lg bg-white  md:mt-6 sm:h-[90%] xs:rounded-none md:m-5 md:border-none md:rounded-xl">
         <div>
           <Link href="/buyer/home">
             <img
@@ -37,9 +37,9 @@ const page = () => {
           />
         </div>
         <Link href="/buyer/login/account">
-        <button className="border border-solid bg-[#303030] border-gray-500 w-[100%] rounded p-2 text-white font-semibold xs:p-1">
-          Continue with email
-        </button>
+          <button className="border border-solid bg-[#303030] border-gray-500 w-[100%] rounded p-2 text-white font-semibold xs:p-1">
+            Continue with email
+          </button>
         </Link>
         <div>
           {" "}
@@ -57,23 +57,23 @@ const page = () => {
               <FaFacebookF
                 color="blue"
                 // width={30}
-                className="w-[25px] h-[25px] mx-auto mt-1"
+                className="w-[25px] h-[25px] mx-auto my-1"
               />
             </p>
             <p className="border  border-solid w-[80px] rounded-lg  bg-[#f1f1f1]">
-              <FcGoogle className="text-[28px] ml-6 mt-1 " />
+              <FcGoogle className="text-[28px] mx-auto my-1 " />
             </p>
             <p className="border  border-solid w-[80px] rounded-lg bg-[#f1f1f1]">
-              <FaApple className="  text-[28px] ml-6 mt-1 " />{" "}
+              <FaApple className="  text-[28px] mx-auto my-1 " />{" "}
             </p>
             {/* <img src='/facebook.png ' className='w-[100px]'></img> */}
           </div>
           <h1 className="mt-7 text-semibold xs:text-xs sm:text-sm">
             New to shopify?
             <Link href="/buyer/register">
-            <span className="text-[#005db3] font-semibold cursor-pointer hover:font-semibold sm:text-sm ">
-              &nbsp; Get started --
-            </span>
+              <span className="text-[#005db3] font-semibold cursor-pointer hover:font-semibold sm:text-sm ">
+                &nbsp; Get started --
+              </span>
             </Link>
           </h1>
           <div className="mt-4">

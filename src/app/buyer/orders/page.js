@@ -1,10 +1,9 @@
 "use client";
+import "./styles/styles.css";
 
 import Image from "next/image";
 
 import React, { Component, useState } from "react";
-
-import './styles/styles.css'
 
 export default function Myorders() {
   const [isOpen, setisOpen] = useState(false);
@@ -60,18 +59,19 @@ export default function Myorders() {
         </div>
       )}
 
-      <div className="main flex flex-col gap-1 w-full justify-center p-4 sm:px-20 cursor-pointer leading-5 text-sm sm:text-base md:text-sm md:px-4 lg:px-10">
+      <div className="main flex flex-col gap-1 w-full justify-center p-1 sm:px-12 cursor-pointer leading-5 text-sm sm:text-base md:text-sm md:px-4 lg:px-10">
         <div
           className="flex gap-4 w-full border border-slate-200 p-2  flex-col items-center xs:flex-row sm:flex-row sm:items-start "
-          onClick={DetailPopup}  title="click to show the orders details"
+          onClick={DetailPopup}
+          title="click to show the orders details"
         >
           <div className="bikesection">
             <img src="../../../orders_images/bike.png" />
           </div>
 
-          <div className=" flex  items-center w-full flex-col sm:flex-col lg:flex-row  leading-8  md:gap-2 justify-center ">
-            <div className="flex flex-col justify-center items-center px-22">
-              <div className="flex  w-full items-center justify-center px-8 md:px-2">
+          <div className=" flex  items-start w-full flex-col sm:flex-col lg:flex-row  leading-8  md:gap-2 lg:gap-0 justify-center ">
+            <div className="flex w-full flex-col justify-center items-center px-22">
+              <div className="flex  w-full items-center justify-center px-8 md:px-2 lg:px-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="14"
@@ -98,8 +98,8 @@ export default function Myorders() {
               </div>
             </div>
 
-            <div className="flex md:flex-col justify-between w-full items-center relative px-12 md:px-2">
-              <div className="">
+            <div className="flex md:flex-col justify-between w-full items-center relative px-12 md:px-2 lg:px-0 lg:p-0 lg:items-start">
+              <div className=" lg:flex lg:w-full lg:items-center lg:justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -128,64 +128,73 @@ export default function Myorders() {
                   ></path>
                 </svg>
 
-                <div className="lines"></div>
+                <div className="lines lg:!hidden"></div>
+                <div className="hidden lg:block lg:h-0.2 horizontal_lines"></div>
               </div>
               <span>Placed</span>
             </div>
 
-            <div className="flex md:flex-col justify-between w-full items-center relative px-12 md:p-2">
-              <div>
+            <div className="flex md:flex-col justify-between w-full items-center relative px-12 md:p-2 lg:px-0 lg:p-0 lg:items-start">
+              <div className="lg:flex lg:w-full lg:justify-between items-center">
                 <div className=" w-3.5 h-3.5 bg-silverSurfer-100 border border-green-500 rounded-full transform"></div>
-                <div className="lines"></div>
+                <div className="lines lg:!hidden"></div>
+                <div className="hidden lg:block horizontal_lines"></div>
               </div>
 
               <span>In Process</span>
             </div>
 
-            <div className="flex md:flex-col justify-between w-full items-center px-12 md:px-2">
-              <div>
+            <div className="flex md:flex-col justify-between w-full items-center px-12 md:px-2 lg:px-0 lg:items-start">
+              <div className="lg:flex lg:w-full lg:justify-center lg:items-center">
                 <div className="w-3.5 h-3.5 bg-silverSurfer-100 border border-green-500 rounded-full transform"></div>
-                <div className="lines"></div>
+                <div className="lines lg:!hidden"></div>
+                <div className="hidden lg:block   horizontal_lines"></div>
               </div>
 
               <span>Packed</span>
             </div>
 
-            <div className="flex md:flex-col justify-between w-full items-center px-12 md:px-2">
-              <div>
+            <div className="flex md:flex-col justify-between w-full items-center px-12 md:px-2 lg:px-0 lg:items-start ">
+              <div className="lg:flex lg:w-full lg:items-center lg:justify-center">
                 <div className="w-3.5 h-3.5 bg-silverSurfer-100 border border-green-500 rounded-full transform"></div>
-                <div className="lines"></div>
+                <div className="lines lg:!hidden"></div>
+                <div className="hidden lg:block   horizontal_lines"></div>
               </div>
 
               <span className="text-sm text-center">On The Way</span>
             </div>
 
-            <div className="flex  justify-between w-full items-center md:flex-col px-12 md:px-2">
-              <div>
+            <div className="flex  justify-between w-full items-center md:flex-col px-12 md:px-2 lg:px-0 lg:items-start">
+              <div className="lg:flex lg:w-full lg:items-center lg:justify-center">
                 <div className="w-3.5 h-3.5 bg-silverSurfer-100 border border-green-500 rounded-full transform "></div>
-                <div className="lines"></div>
+                <div className="lines lg:!hidden"></div>
+                <div className="hidden lg:block   horizontal_lines"></div>
               </div>
 
               <span>Delivered</span>
             </div>
 
-            <div className="flex  justify-between w-full items-center md:flex-col px-12 md:px-2">
-              <div>
+            <div className="flex  justify-between w-full items-center md:flex-col px-12 md:px-2 lg:px-0 lg:items-start">
+              <div className="lg:flex lg:w-full lg:items-center lg:justify-center">
                 <div className="w-3.5 h-3.5 bg-silverSurfer-100 border border-green-500 rounded-full transform"></div>
-                <div className="lines"></div>
+                <div className="lines lg:!hidden"></div>
+                <div className="hidden lg:block  horizontal_lines"></div>
               </div>
 
               <span>Reached</span>
             </div>
 
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center w-full">
               <button
                 className="text-sm text-center w-36 bg-gray-200 p-4 m-1 flex items-center justify-between"
                 onClick={togglePopup}
               >
                 <span>View 1 Item</span>
 
-                <img src="../../../orders_images/dropdown.png" className="w-3" />
+                <img
+                  src="../../../orders_images/dropdown.png"
+                  className="w-3"
+                />
               </button>
             </div>
           </div>
@@ -311,10 +320,10 @@ export default function Myorders() {
           </span>
         </div>
         <div
-          className="flex gap-4 w-full border border-slate-200 p-2  bg-gray-100   "
+          className="flex flex-col sm:!flex-row   gap-4 w-full border border-slate-200 p-2  bg-gray-100   "
           onClick={pOrders}
         >
-          <div className="bikesection">
+          <div className="bikesection flex items-center justify-center">
             <img src="../../../orders_images/car.png" className="w-10" />
           </div>
 
@@ -327,10 +336,8 @@ export default function Myorders() {
               <span className="text-center">09 jan, Tue 7:30 AM -11:30 Am</span>
             </div>
 
-            <div className="flex  justify-evenly w-full items-center">
+            <div className="flex flex-col justify-evenly w-full items-center">
               <span>Order Amount: Rs 0</span>
-              <img src="../../../orders_images/dropdown.png" className="w-3" />
-
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <main className="flex justify-center items-center md:h-[90vh] md:mt-4 md:-mb-14 min-h-[97vh] bg-white sm:bg-gradient-to-r sm:from-indigo-900 sm:via-indigo-700 sm:to-cyan-400 -mb-10 md:mb-2 ">
+    <main className="flex justify-center items-center md:h-[90vh] md:mt-4 md:mb-2 min-h-[97vh] bg-white sm:bg-gradient-to-r sm:from-indigo-900 sm:via-indigo-700 sm:to-cyan-400 -mb-10 ">
       <div className="xs:mt-0 sm:border sm:border-solid sm:border-gray-500 sm:mt-0 sm:rounded-none xs:w-[100%] xs:h-[100%] md:w-[450px] md:h-[103%] md:mt-7 rounded-lg p-[30px]  bg-white  mb-4">
         <div>
           {" "}

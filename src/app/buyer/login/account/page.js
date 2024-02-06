@@ -3,10 +3,10 @@ import { CiUser } from "react-icons/ci";
 
 const page = () => {
   return (
-    <main className="xs:bg-white sm:bg-white flex justify-center  min-h-[100vh] md:w-[98.90vw] -mb-10 bg-gradient-to-r from-indigo-900  via-indigo-700 to-cyan-400 ">
+    <main className="w-screen xs:bg-white sm:bg-white flex justify-center  min-h-[100vh] -mb-10 bg-gradient-to-r from-indigo-900  via-indigo-700 to-cyan-400 ">
       <div
         className=" sm:border-none 
-       h-[100%] w-[450px]  rounded-lg p-[30px] bg-white  mt-28 "
+       h-[100%] w-[98%] md:w-[640px] -m-1 rounded-lg p-[30px] bg-white  mt-28 "
       >
         <div>
           {" "}
@@ -25,10 +25,10 @@ const page = () => {
           </h3>
         </div>
         <div className=" xs:text-sm flex w-[100%] rounded p-5 hover:bg-gray-100 ">
-          <div className="w-9 rounded bg-gray-500 cursor-pointer">
-            <span className="bg-red-500">
-              <CiUser className="text-center text-[30px] pl-2 rounded" />
-            </span>{" "}
+          <div className="w-9 flex justify-center items-center rounded bg-gray-500 cursor-pointer">
+            {/* <span className="bg-red-500"> */}
+            <CiUser className="text-center text-[30px] rounded" size={20} />
+            {/* </span>{" "} */}
           </div>
           <div>
             {" "}

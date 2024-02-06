@@ -5,16 +5,12 @@ import { FaRegBookmark } from "react-icons/fa6";
 import { FaPlus } from "react-icons/fa6";
 import ImgsData from "./ImgsData";
 
-
 const ProductPage = () => {
- 
-
   return (
-    <div className="xl:p-36 sm:p-6 m-2 ">
+    <div className="xl:px-36 sm:p-6  ">
       <div className="flex md:flex-row flex-col sm:justify-center justify-between gap-2 border-b-[2px] border-dashed border-gray-400  sm:h-[100%] sm:w-[100%] ">
         {/* product image */}
-        <ImgsData/>
-        
+        <ImgsData />
 
         {/* product details */}
         {/* className="h-[700px] w-[580px] " */}
@@ -49,11 +45,11 @@ const ProductPage = () => {
             {/* <button className=" bg-[#cc0000] text-white font-bold rounded-md lg:pl-24 lg:pr-24 p-4 ">
               Add to basket
             </button> */}
-            <div className="bg-[#cc0000] text-white  lg:h-14 rounded-md md:pl-12 md:pr-12 xs:pl-4 xs:pr-4 p-4 px-10 md:font-medium text-xs md:text-base m-2">
+            <div className="bg-[#cc0000] hover:bg-red-700 cursor-pointer text-white  lg:h-14 rounded-md md:pl-12 md:pr-12 xs:pl-4 xs:pr-4 p-4 px-10 md:font-medium text-xs md:text-base m-2">
               <span>Add to basket</span>
             </div>
 
-            <div className="border border-gray-400  lg:h-14 rounded-md md:pl-12 md:pr-12 xs:pl-4 xs:pr-4 p-4 flex items-center gap-2 md:font-medium text-xs md:text-base m-2 ">
+            <div className="border border-gray-400 hover:bg-slate-100 cursor-pointer  lg:h-14 rounded-md md:pl-12 md:pr-12 xs:pl-4 xs:pr-4 p-4 flex items-center gap-2 md:font-medium text-xs md:text-base m-2 ">
               <FaRegBookmark className="text-lg" /> save for later{" "}
             </div>
           </div>
@@ -68,7 +64,7 @@ const ProductPage = () => {
             <h3 className="font-semibold mb-4">Pick sizes</h3>
 
             <div className="sm:max-h-[20%] sm:w-[100%] w-[100%] h-[100%]">
-              <div className="flex justify-between border border-gray-400 rounded-md p-2 mb-3 sm:max-w-[100%] sm:max-h-[100%] ">
+              <div className="flex justify-between border border-gray-400 hover:bg-slate-100 cursor-pointer rounded-md p-2 mb-3 sm:max-w-[100%] sm:max-h-[100%] ">
                 <h2>1 Kg</h2>
                 <div>
                   <p className="mb-2">
@@ -87,7 +83,7 @@ const ProductPage = () => {
                 <img src="" alt="" />
               </div>
 
-              <div className="flex justify-between border border-gray-400 rounded-md p-2 mb-3">
+              <div className="flex justify-between border border-gray-400 rounded-md p-2 mb-3  hover:bg-slate-100 cursor-pointer">
                 <h2>1 Kg</h2>
                 <div>
                   <p className="mb-2">
@@ -106,7 +102,7 @@ const ProductPage = () => {
                 <img src="" alt="" />
               </div>
 
-              <div className="flex justify-between border border-gray-400 rounded-md p-2 mb-3 ">
+              <div className="flex justify-between border border-gray-400 rounded-md p-2 mb-3  hover:bg-slate-100 cursor-pointer">
                 <h2>1 Kg</h2>
                 <div>
                   <p className="mb-2">
@@ -117,7 +113,7 @@ const ProductPage = () => {
                   </p>
                   <p className="text-gray-500">
                     ₹92{" "}
-                    <span className="text-green-700 font-normal rounded-sm text-sm bg-gray-200 p-1">
+                    <span className="text-green-700 font-normal rounded-sm text-sm bg-gray-200 p-1  hover:bg-slate-100 cursor-pointer">
                       48% OFF
                     </span>
                   </p>
@@ -184,7 +180,7 @@ const ProductPage = () => {
         <div className="border-b-[1px]  border-gray-300 p-4">
           <div className="flex justify-between items-center">
             <p className="font-medium">About the Product</p>
-            <FaPlus />
+            <FaPlus className=" hover:rotate-45 transition-transform cursor-pointer"/>
           </div>
 
           <ul
@@ -204,7 +200,7 @@ const ProductPage = () => {
         <div className="border-b-[1px]  border-gray-300 p-4">
           <div className="flex justify-between items-center">
             <p className="font-medium">Benefits</p>
-            <FaPlus />
+            <FaPlus className=" hover:rotate-45 transition-transform cursor-pointer"/>
           </div>
 
           <ul
@@ -225,7 +221,7 @@ const ProductPage = () => {
         <div className="border-b-[1px]  border-gray-300 p-4">
           <div className="flex justify-between items-center">
             <p className="font-medium">Storage and Uses</p>
-            <FaPlus />
+            <FaPlus className=" hover:rotate-45 transition-transform cursor-pointer" />
           </div>
 
           <ul
@@ -244,7 +240,7 @@ const ProductPage = () => {
         <div className=" p-4">
           <div className="flex justify-between items-center">
             <p className="font-medium">Other Product Info</p>
-            <FaPlus />
+            <FaPlus className=" hover:rotate-45 transition-transform cursor-pointer"/>
           </div>
 
           <div className="font-light text-sm w-[90%]">
@@ -264,7 +260,7 @@ const ProductPage = () => {
 
         <div className="flex justify-between items-center gap-5 mb-4">
           <div className="h-24 w-24 overflow-hidden rounded-md">
-            <img src="/img1.jpeg" alt="" />
+            <img src="/img.jpeg" alt="" />
           </div>
 
           <div>
@@ -280,7 +276,7 @@ const ProductPage = () => {
           </div>
         </div>
 
-        <div className="md:flex md:justify-between items-end md:gap-32 lg:gap-6 ">
+        <div className=" md:flex md:justify-between items-center md:gap-32 lg:gap-6 ">
           <div className="mb-4">
             <h3 className="text-gray-400 mb-2">MRP:₹92</h3>
             <h3 className="font-medium text-lg mb-2">
@@ -295,7 +291,7 @@ const ProductPage = () => {
           </div>
           {/* <h3 className="text-green-700 text-sm mb-1 M-2">You Save:48% OFF</h3> */}
 
-          <button className="bg-[#cc0000] text-white font-bold rounded-md md:pl-24 md:pr-24 sm:pl-14 sm:pr-14 pl-6 pr-6 p-4 h-16">
+          <button className="bg-[#cc0000] hover:bg-red-700 text-white font-bold rounded-md md:pl-24 md:pr-24 sm:pl-14 sm:pr-14 pl-6 pr-6 p-4 h-16">
             Add to basket
           </button>
         </div>
